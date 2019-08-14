@@ -1,6 +1,7 @@
 # My UserScripts
 
-Some personal user scripts.
+Some personal user scripts, written for Chrome with Tampermonkey in JavaScript.
+Install by clicking on the <...>.user.js file and viewing in raw mode.
 
 ## AdBlock-Blocker Blocker
 
