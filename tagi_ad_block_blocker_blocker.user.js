@@ -11,6 +11,7 @@ var hide_adblock_blocker = function() {
 
     // Remove Pop-up
     $("#tamovl-main-container").hide();
+    $("#tamovl-page-wrap").hide();
 
     // Search for and edit stylesheet to make page scrollable
     var ss = document.styleSheets;
@@ -28,6 +29,7 @@ var hide_adblock_blocker = function() {
                             // Set properties accordingly
                             rule.style.setProperty('overflow', 'scroll', null);
                             rule.style.setProperty('position', '', null);
+                            rule.style.setProperty('user-select', 'text', null);
                             console.log("Fuck yeah");
                         }
                     } catch (e) {
@@ -39,6 +41,7 @@ var hide_adblock_blocker = function() {
             console.log("Errooooor");
         }
     }
+    $("body.modal-open").zIndex = 100000;
 }
 
 hide_adblock_blocker();
@@ -60,3 +63,5 @@ if (document.addEventListener) {
 else if (document.attachEvent) {
     document.attachEvent('onkeydown', keydownHandler);
 }
+
+
